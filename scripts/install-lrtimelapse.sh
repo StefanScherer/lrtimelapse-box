@@ -8,6 +8,9 @@ if [ ! -d "/Applications/LRTimelapse 3.app/" ]; then
   pushd "/Volumes/LRTimelapse 3 - Installer/"
   mkdir -p "/Applications/LRTimelapse 3.app/"
   sudo cp -r "LRTimelapse 3.app" "/Applications/"
+  if [ ! -d "/Users/$USER/Library/Application Support/Adobe/Lightroom" ]; then
+    mkdir -p "/Users/$USER/Library/Application Support/Adobe/Lightroom"
+  fi
   sudo installer -pkg "LRTimelapse 3.4 Addons.mpkg" -target /
   # run postflight for current user
   "LRTimelapse 3.4 Addons.mpkg/Contents/Packages/lightroom.pkg/Contents/Resources/postflight"
