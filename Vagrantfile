@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     box.vm.provider "vmware_fusion" do |v|
       v.gui = true
-      v.vmx["memsize"] = "4096"
+      v.vmx["memsize"] = "2596"
       v.vmx["numvcpus"] = "4"
     end
   end
