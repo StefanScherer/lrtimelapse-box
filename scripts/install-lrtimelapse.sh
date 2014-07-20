@@ -12,5 +12,5 @@ if [ ! -d "/Applications/LRTimelapse 3.app/" ]; then
   popd
   sleep 5
   hdiutil detach /dev/disk1
-#  rm "LRTimelapse3.4_mac.dmg"
+  rm "LRTimelapse3.4_mac.dmg"
 fi
