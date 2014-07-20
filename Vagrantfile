@@ -8,9 +8,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   box.vm.box = "osx109"
     box.vm.hostname = "lrtimelapse"
 
-    box.vm.provision "shell", path: "scripts/install-xcode-command-line-tools.sh", privileged: false
-    box.vm.provision "shell", path: "scripts/install-homebrew.sh", privileged: false
-    box.vm.provision "shell", path: "scripts/install-caskroom.sh", privileged: false
+#    box.vm.provision "shell", path: "scripts/install-xcode-command-line-tools.sh", privileged: false
+#    box.vm.provision "shell", path: "scripts/install-homebrew.sh", privileged: false
+#    box.vm.provision "shell", path: "scripts/install-caskroom.sh", privileged: false
     box.vm.provision "shell", path: "scripts/set-german.sh", privileged: false
     box.vm.provision "shell", path: "scripts/disable-screenblanker.sh", privileged: false
     box.vm.provision "shell", path: "scripts/install-adobe-lightroom.sh", privileged: false
