@@ -14,6 +14,7 @@ if [ $? -gt 0 ]; then
     echo "Downloading command_line_tools_for_osx_mavericks_april_2014"
     curl -s -O -L http://swcdn.apple.com/content/downloads/42/47/031-00536/0e3xru4xatuj4v9wb0y113nirfvnz34v8d/CLTools_Executables.pkg
     curl -s -O -L http://swcdn.apple.com/content/downloads/42/47/031-00536/0e3xru4xatuj4v9wb0y113nirfvnz34v8d/MacOSX10_9_SDK.pkg
+    echo "Installing command_line_tools_for_osx_mavericks_april_2014"
     sudo installer -pkg "CLTools_Executables.pkg" -target /
     sudo installer -pkg "MacOSX10_9_SDK.pkg" -target /
     rm CLTools_Executables.pkg

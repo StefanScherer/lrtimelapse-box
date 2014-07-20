@@ -5,9 +5,9 @@
 
 if [  -d "/Applications/Adobe Lightroom 4.app/" ]; then
   echo "You already have Adobe Lightroom 4 installed"
-else if [ ! -d "/Applications/Adobe Lightroom 5.app/" ]; then
+elif [ -d "/Applications/Adobe Lightroom 5.app/" ]; then
   echo "You already have Adobe Lightroom 5 installed"
-else if [ ! -d "/Applications/Adobe Lightroom 3.app/" ]; then
+elif [ ! -d "/Applications/Adobe Lightroom 3.app/" ]; then
   echo "Downloading Adobe Lightroom 3.6"
   curl -s -O -L http://download.adobe.com/pub/adobe/lightroom/mac/3.x/Lightroom_3_LS11_mac_3_6.dmg
   echo "Installing Adobe Lightroom 3.6"
