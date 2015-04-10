@@ -5,7 +5,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :"lrtimelapse" do |box|
-  box.vm.box = "osx109"
+    box.vm.box = "osx109"
+    box.ssh.insert_key = false
     box.vm.hostname = "lrtimelapse"
 
     box.vm.provision "shell", path: "scripts/set-german.sh", privileged: false
